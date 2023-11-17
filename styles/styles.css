@@ -1,0 +1,131 @@
+.header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 5px;
+    left: 0;
+    width: 100%;
+}
+.header-buttons-logo {
+    position: absolute;
+    top: 2.5px;
+    left: 10px;
+    height: 35px;
+    /* width: 35px; */
+}
+.header-buttons-avatar {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    height: 35px;
+    width: 35px;
+    border-radius: 17.5px;
+}
+
+.background_img {
+    position: fixed;
+    z-index: -2;
+    background-position: 50% center;
+    background-size: cover;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.99;
+    width: 100%;
+}
+
+.popular-info-grid {
+    z-index: -1;
+    display: block;
+    position: fixed;
+    color: white;
+    top: 20%;
+    left: 55px;
+    margin: 10px 0px;
+    /* gap: 15px; */
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    width: 400px;
+    height: 400px;
+}
+.popular-title {
+    font-size: 50px;
+    font-weight: 550;
+    margin: 15px 0px;
+    /* height: 50px; */
+    grid-column-start: 1;
+    grid-column-end: 3
+}
+.popular-play_button {
+    padding: 2px 15px;
+    height: 30px;
+    width: 80px;
+    background-color: rgb(90,90,90, 0.35);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    margin-right: 15px;
+}
+.popular-mylist_button {
+    padding: 2px 15px;
+    height: 30px;
+    width: 105px;
+    background-color: rgb(90,90,90, 0.35);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+}
+.popular-desc {
+    font-size: 15px;
+    grid-column-start: 1;
+    grid-column-end: 3
+}
+
+.videos {
+    position: absolute;
+    left: 0;
+    top: 56%;
+
+    /* transition: opacity .4s cubic-bezier(.665,.235,.265,.8) 0s; */
+    background-color: #121212;
+    background: linear-gradient(
+        to top, black 96.8%, transparent 100%);
+    /* background-size: cover; */
+    /* background-position-x: center; */
+    width: 100%;
+    height: 150%;
+    color: white;
+
+}
+.netflix_originals {
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: 35px;
+}
+.videos-grid {
+    margin-top: 10px;
+    margin: 0px 30px;
+    gap: 70px 30px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr); */
+    /* align */
+    /* padding */
+
+}
+.videos-grid-image1{
+    height: 280px;
+    width: 200px;
+    transition: transform 0.5s ease;
+}
+.videos-grid-image1:hover {
+    transform: scale(1.15);
+}
